@@ -233,7 +233,7 @@ static void rtw89_macos_diag_tx_request(struct rtw89_dev *rtwdev,
 }
 #endif /* RTW89_MACOS */
 
-static bool rtw89_disable_ps_mode;
+static bool rtw89_disable_ps_mode = true;
 module_param_named(disable_ps_mode, rtw89_disable_ps_mode, bool, 0644);
 MODULE_PARM_DESC(disable_ps_mode, "Set Y to disable low power mode");
 
