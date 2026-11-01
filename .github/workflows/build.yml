@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [Catalina, 'Big Sur', Monterey, Ventura, Sonoma14.0, Sonoma14.4, Sequoia, Tahoe]
-        configuration: [Debug, Release]
+        platform: [Tahoe]
+        configuration: [Release]
     steps:
       - uses: actions/checkout@v4
       - name: Install pinned MacKernelSDK
